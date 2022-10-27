@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+// const helper = require('./helper/productHelper')
 
 const { Schema } = mongoose;
 
@@ -28,9 +29,22 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  }
+  },
+  size: [
+    {
+      sizeType: {
+        type: String,
+        required: true
+      },
+      colors: [
+        {
+          colour: helper.colorObject
+        }
+      ]
+    }
+  ]
 });
 
 const Product = mongoose.model('Product', productSchema);
 
-module.exports = Product;
+module.exports = Product  
