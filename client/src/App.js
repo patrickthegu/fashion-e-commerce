@@ -18,6 +18,9 @@ import Nav from './components/Nav';
 import { StoreProvider } from "./utils/GlobalState";
 import OrderHistory from './pages/OrderHistory';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -37,7 +40,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
 function App() {
   return (
     <ApolloProvider client={client}>
@@ -46,12 +48,11 @@ function App() {
           <StoreProvider>
             <Header />
             <Switch>
+              <Route exact path="/success" component={Success} />
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
-              <Route exact path="/upcoming" component={Upcoming} />
-              <Route exact path="/archive" component={Archive} />
-              {/* <Route exact path="/orderHistory" component={OrderHistory} /> */}
+              <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
             </Switch>

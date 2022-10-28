@@ -1,6 +1,10 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
+  type Checkout {
+    session: ID
+  }
+
   type Category {
     _id: ID
     name: String
@@ -28,10 +32,6 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
-  }
-
-  type Checkout {
-    session: ID
   }
 
   type Auth {
