@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
         "build": "cd client && npm run build",
-        "install": "npm run seed && cd server && npm i && cd ../client && npm i",
+        "install": "cd server && npm i && cd ../client && npm i",
         "heroku-postbuild": "npm run install && npm run build",
         "server": "nodemon server.js",
         "seed": "cd server && npm run seed",
