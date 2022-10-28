@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node config/seeds.js"
+    "seed": "node config/seeds.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +20,14 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.7",
     "stripe": "^8.163.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "morgan": "^1.9.0",
+    "body-parser": "^1.18.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
