@@ -8,6 +8,7 @@
         "install-client": "cd client && npm install",
         "heroku-postbuild": "npm run install-client && npm run build",
         "server": "nodemon server.js",
+        "seed": "cd server && npm run seed",
         "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
         "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
   },
@@ -17,9 +18,11 @@
   "devDependencies": {
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.3"
+    
   },
   "dependencies": {
-    "stripe": "^8.176.0"
+    "stripe": "^8.176.0",
+    "dotenv": "^8.2.0"
   },
   "engines": {
     "node": "16.x"
