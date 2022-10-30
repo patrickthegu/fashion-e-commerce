@@ -6,13 +6,10 @@ import { Link } from "react-router-dom";
 function Footer() {
 
     return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/Terms">
+        
+            <Link to="/terms">
               2022 Terms and Conditions
             </Link>
-          </li>
-        </ul>
     );
 
 }

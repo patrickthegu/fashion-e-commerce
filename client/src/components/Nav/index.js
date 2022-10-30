@@ -42,9 +42,10 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
-      <CategoryMenu />
+      
 
       <nav>
+        <CategoryMenu />
         {showNavigation()}
       </nav>
     </header>
