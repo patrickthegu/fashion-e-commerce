@@ -18,7 +18,7 @@ db.once('open', async () => {
     {
       name: 'Jacket',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'A black asymmetrical fleeced bomber, with double ended zip, raw neckline and khaki mesh cut-out. Reworked from deadstock sweatshirts from last season.',
       image: 'jacket.jpg',
       category: categories[0]._id,
       price: 300,
@@ -27,7 +27,7 @@ db.once('open', async () => {
     {
       name: 'Cargo Pants',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'The "Sporty Cargo Pant" is a wide leg pant with our special double seaming throughout. Featuring cargo style pockets, d-ring key holder and double stitched elasticated waistband',
       image: 'cargo-pants.jpg',
       category: categories[0]._id,
       price: 220,
@@ -37,7 +37,7 @@ db.once('open', async () => {
       name: 'Cargo Shorts',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'a black elasticated short with exaggerated, architectural pockets, key-holder and our special double seaming throughout.',
       image: 'cargo-shorts.jpg',
       price: 150,
       quantity: 0
@@ -46,7 +46,7 @@ db.once('open', async () => {
       name: 'Work Pants',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'Durable hi vis work pants',
       image: 'work-pants.jpg',
       price: 200,
       quantity: 0
@@ -55,18 +55,18 @@ db.once('open', async () => {
       name: 'Grey Sweatpants',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'A regular pair of grey sweat pants for around the house',
       image: 'grey-pants.jpg',
-      price: 199.99,
+      price: 200,
       quantity: 0
     },
     {
       name: 'Navy Sweatpants',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+        'A regular pair of navy sweat pants for around the house',
       image: 'navy-pants.jpg',
-      price: 199.99,
+      price: 200,
       quantity: 0
     }
   ]);
